@@ -1,0 +1,9 @@
+* {
+    margin: 0; /* espaçamento externo entre eas caixas */
+    padding: 0; /* espaçamento interno entre o conteúdo e as bordas */
+    background-origin: border-box; /* define a origem do fundo como a borda da caixa */
+}
+
+ul {
+    list-style: none; /* remove os marcadores (pontos) da lista */
+}

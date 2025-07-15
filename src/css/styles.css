@@ -1,0 +1,188 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+    background-color: #2a306c;
+    display: flex;
+    /* exibe os elementos filhos em linha */
+    justify-content: center;
+    /* centraliza os elementos filhos horizontalmente */
+    padding: 10px;
+    margin-bottom: 60px;
+    /* espaçamento inferior de 60px */
+}
+
+.container {
+    max-width: 1170px;
+    /* largura máxima de 1170px */
+    margin: 0 auto;
+    /* centraliza o container horizontalmente */
+}
+
+.container .produtos {
+    color: #1b5fac;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    line-height: 32px;
+    /* altura da linha de 32px */
+    letter-spacing: 2px;
+    /* espaçamento entre letras de 2px */
+}
+
+.container .filtros {
+    display: flex;
+    justify-content: space-between;
+    /* distribui os elementos filhos com espaço entre eles */
+    flex-wrap: wrap;
+    /* permite que os elementos filhos se movam para a próxima linha se não houver espaço suficiente */
+    margin-bottom: 32px;
+}
+
+.container .categorias-cartas,
+.container .preco-cartas {
+    display: flex;
+    flex-direction: column;
+    /* exibe os elementos filhos em coluna */
+    width: 40%;
+    /* largura do container pai */
+}
+
+.container label {
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #1b5fac;
+}
+
+.container .categorias-cartas select,
+.container .preco-cartas input {
+    padding: 16px 13px;
+    border-radius: 2px;
+    border: 2px solid #1b5fac;
+    background-color: #F2EEFA;
+    color: #120234;
+    height: 52px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container select:focus,
+.container input:focus,
+.container select:focus-visible,
+.container input:focus-visible {
+    outline: none;
+    /* remove o contorno padrão do navegador */
+}
+
+.container .categorias-cartas select.categoria {
+    appearance: none;
+    /* remove o estilo padrão do navegador */
+    background: url(/src/imagens-cp/seta-para-baixo.png) 97% center no-repeat, #F2EEFA;
+    /* define a imagem de fundo da seta para baixo */
+}
+
+.container .filtros .btn-filtrar {
+    border: none;
+    background-color: #1b5fac;
+    color: #EDEDED;
+    padding: 16px 32px;
+    font-weight: 500;
+    align-self: end;
+    /* alinha o botão ao final do container pai */
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.container .filtros .btn-filtrar:hover {
+    background-color: #0b1357;
+    color: #8c87bf;
+    /* altera a cor do fundo e do texto ao passar o mouse */
+}
+
+.container .cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.container .cartas .carta {
+    max-width: 365px;
+    background-color: #EDEDED;
+    color: #0E0027;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    margin: auto;
+}
+
+.container .carta img {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .carta .informacoes {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .carta .informacoes .nome-personagem {
+    font-size: 24px;
+    font-weight: 700;
+    columns: #111111;
+}
+
+.container .carta .informacoes .categoria {
+   color: #7E7E7E;
+   font-weight: 700;
+}
+
+.container .carta .informacoes .preco {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #4D8E5C;
+}
+
+.container .carta .informacoes .btn-comprar {
+    color: #EDEDED;
+    background-color: #1b5fac;
+    padding: 16px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none; /* tira o sublinhado de baixo do link */
+}
+
+.container .carta .informacoes .btn-comprar:hover {
+    background-color: #0b1357;
+    color: #8c87bf;
+    /* altera a cor do fundo e do texto ao passar o mouse */
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    background-color: #120234;
+    color: #EDEDED;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.esconder{
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
