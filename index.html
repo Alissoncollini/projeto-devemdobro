@@ -1,116 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+    <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semana do zero ao programador contradado - Magick IA</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semana do zero ao programador contradado - Magick IA</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
-    
-</head>
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/styles.css">
+        <link rel="stylesheet" href="./src/css/responsivo.css">
 
-<body>
-    <header class="cabecalho">
-        <img src="./src/imagens-cp/Card_Jitsu_Logo.png" alt="Logo Card Jitsu">
-    </header>
-    <main class="container">
-        <h1 class="produtos">Produtos</h1>
-        <div class="filtros">
-            <div class="categorias-cartas">
-                <label for="categoria">Categoria</label>
-                <select id="categoria" class="categoria">
-                    <option value="">Selecione uma carta</option>
-                    <option value="comum">Carta Comum</option>
-                    <option value="membro">Carta Exclusiva</option>
-                    <option value="poder">Carta de Poder</option>
-                </select>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <img src="./src/imagens-cp/Card_Jitsu_Logo.png" alt="Logo Card Jitsu">
+        </header>
+        <main class="container">
+            <h1 class="produtos">Produtos</h1>
+            <div class="filtros">
+                <div class="categorias-cartas">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" class="categoria">
+                        <option value="">Selecione uma carta</option>
+                        <option value="comum">Carta Comum</option>
+                        <option value="membro">Carta Exclusiva</option>
+                        <option value="poder">Carta de Poder</option>
+                    </select>
+                </div>
+                <div class="preco-cartas">
+                    <label for="preco">Preço máximo (R$)</label>
+                    <input type="text" id="preco" class="preco" placeholder="Ex:100">
+                </div>
+                <button class="btn-filtrar">Aplicar filtros</button>
             </div>
-            <div class="preco-cartas">
-                <label for="preco">Preço máximo (R$)</label>
-                <input type="text" id="preco" class="preco" placeholder="Ex:100">
-            </div>
-            <button class="btn-filtrar">Aplicar filtros</button>
-        </div>
-        <ul class="cartas">
-            <li class="carta" data-categoria="Poder" data-preco="3000">
-                <img src="./src/imagens-cp/card-fogo-epica.png" alt="Carta Melhoria do piso" />
-                <div class="informacoes">
-                    <h2 class="nome-personagem"> Melhoria de piso</h2>
-                    <span class="categoria">Categoria: Poder</span>
-                    <span class="preco">R$ 3000,00</span>
-                    <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta melhoria de piso!"
-                        class="btn-comprar" target="_blank">Comprar</a>
-                </div>
-            </li>
+            <ul class="cartas">
+                <li class="carta" data-categoria="Poder" data-preco="3000">
+                    <img src="./src/imagens-cp/card-fogo-epica.png" alt="Carta Melhoria do piso" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem"> Melhoria de piso</h2>
+                        <span class="categoria">Categoria: Poder</span>
+                        <span class="preco">R$ 3000,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta melhoria de piso!"
+                            class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </li>
 
-            <li class="carta" data-categoria="Poder" data-preco="4000">
-                <img src="./src/imagens-cp/card-fogo2-epica.png" alt="Carta Britadeira" />
-                <div class="informacoes">
-                    <h2 class="nome-personagem"> Britadeira</h2>
-                    <span class="categoria">Categoria: Poder</span>
-                    <span class="preco">R$ 4000,00</span>
-                    <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta britadeira!" class="btn-comprar"
-                        target="_blank">Comprar</a>
-                </div>
-            </li>
+                <li class="carta" data-categoria="Poder" data-preco="4000">
+                    <img src="./src/imagens-cp/card-fogo2-epica.png" alt="Carta Britadeira" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem"> Britadeira</h2>
+                        <span class="categoria">Categoria: Poder</span>
+                        <span class="preco">R$ 4000,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta britadeira!"
+                            class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </li>
 
-            <li class="carta" data-categoria="Comum" data-preco="800">
-                <img src="./src/imagens-cp/card-agua-comum.png" alt="Carta Mergulho" />
-                <div class="informacoes">
-                    <h2 class="nome-personagem"> Mergulho</h2>
-                    <span class="categoria">Categoria: Comum</span>
-                    <span class="preco">R$ 800,00</span>
-                    <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta mergulho!" class="btn-comprar"
-                        target="_blank">Comprar</a>
-                </div>
-            </li>
+                <li class="carta" data-categoria="Comum" data-preco="800">
+                    <img src="./src/imagens-cp/card-agua-comum.png" alt="Carta Mergulho" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem"> Mergulho</h2>
+                        <span class="categoria">Categoria: Comum</span>
+                        <span class="preco">R$ 800,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta mergulho!" class="btn-comprar"
+                            target="_blank">Comprar</a>
+                    </div>
+                </li>
 
-            <li class="carta" data-categoria="Membro" data-preco="8000">
-                <img src="./src/imagens-cp/Card-exclusiva-membro.png" alt="Carta Exclusiva Membro" />
-                <div class="informacoes">
-                    <h2 class="nome-personagem"> Exclusiva Membro</h2>
-                    <span class="categoria">Categoria: Membro</span>
-                    <span class="preco">R$ 8000,00</span>
-                    <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta exclusiva membro!"
-                        class="btn-comprar" target="_blank">Comprar (somente membros)</a>
-                </div>
-            </li>
+                <li class="carta" data-categoria="Membro" data-preco="8000">
+                    <img src="./src/imagens-cp/Card-exclusiva-membro.png" alt="Carta Exclusiva Membro" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem"> Exclusiva Membro</h2>
+                        <span class="categoria">Categoria: Membro</span>
+                        <span class="preco">R$ 8000,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta exclusiva membro!"
+                            class="btn-comprar" target="_blank">Comprar (somente membros)</a>
+                    </div>
+                </li>
 
-            <li class="carta" data-categoria="Comum" data-preco="600">
-                <img src="./src/imagens-cp/card-fogo-comum.png" alt="Carta Ninja Fantasma" />
-                <div class="informacoes">
-                    <h2 class="nome-personagem"> Ninja Fantasma</h2>
-                    <span class="categoria">Categoria: Comum</span>
-                    <span class="preco">R$ 600,00</span>
-                    <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta ninja fantasma!"
-                        class="btn-comprar" target="_blank">Comprar</a>
-                </div>
-            </li>
+                <li class="carta" data-categoria="Comum" data-preco="600">
+                    <img src="./src/imagens-cp/card-fogo-comum.png" alt="Carta Ninja Fantasma" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem"> Ninja Fantasma</h2>
+                        <span class="categoria">Categoria: Comum</span>
+                        <span class="preco">R$ 600,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta ninja fantasma!"
+                            class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </li>
 
-            <li class="carta" data-categoria="Comum" data-preco="700">
-                <img src="./src/imagens-cp/card-gelo-comum.png" alt="Carta Futebol" />
-                <div class="informacoes">
-                    <h2 class="nome-personagem">Futebol</h2>
-                    <span class="categoria">Categoria: Comum</span>
-                    <span class="preco">R$ 700,00</span>
-                    <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta futebol!" class="btn-comprar"
-                        target="_blank">Comprar</a>
-                </div>
-            </li>
-        </ul>
-    </main>
+                <li class="carta" data-categoria="Comum" data-preco="700">
+                    <img src="./src/imagens-cp/card-gelo-comum.png" alt="Carta Futebol" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Futebol</h2>
+                        <span class="categoria">Categoria: Comum</span>
+                        <span class="preco">R$ 700,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta futebol!" class="btn-comprar"
+                            target="_blank">Comprar</a>
+                    </div>
+                </li>
+            </ul>
+        </main>
 
-    <footer class="rodape">@2025 - Todos os direitos reservados</footer>
+        <footer class="rodape">@2025 - Todos os direitos reservados</footer>
 
-    <script src="./src/js/index.js"></script>
-</body>
-
-</html>
+        <script src="./src/js/index.js"></script>
+    </body>
+    </html>

@@ -115,7 +115,7 @@ body {
     background-color: #EDEDED;
     color: #0E0027;
     border-radius: 20px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     margin: auto;
 }
 
@@ -142,8 +142,8 @@ body {
 }
 
 .container .carta .informacoes .categoria {
-   color: #7E7E7E;
-   font-weight: 700;
+    color: #7E7E7E;
+    font-weight: 700;
 }
 
 .container .carta .informacoes .preco {
@@ -161,7 +161,8 @@ body {
     letter-spacing: 2px;
     transition: 0.3s;
     text-align: center;
-    text-decoration: none; /* tira o sublinhado de baixo do link */
+    text-decoration: none;
+    /* tira o sublinhado de baixo do link */
 }
 
 .container .carta .informacoes .btn-comprar:hover {
@@ -179,7 +180,7 @@ body {
     margin-top: 60px;
 }
 
-.esconder{
+.esconder {
     display: none;
 }
 
